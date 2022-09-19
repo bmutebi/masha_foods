@@ -1,0 +1,206 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Century Gothic";
+  line-height: 1.5;
+}
+
+header,
+.title,
+.main-menu,
+footer {
+  background-color: #fbf3e1;
+}
+
+.logo,
+nav,
+.title,
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  background: #fff;
+}
+
+.logo img {
+  height: 200px;
+  width: 300px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+img,
+section {
+  width: 100%;
+}
+
+.logo img {
+  width: auto;
+}
+
+.welcome {
+  background-color: #232380;
+  text-align: center;
+  padding: 50px;
+  margin-top: -20px;
+  color: white;
+}
+
+.welcome h1,
+.welcome h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.welcome-text {
+  width: 70%;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+section {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  width: 50%;
+  padding: 0 25px;
+}
+
+.left {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.left p {
+  margin: 40px 0;
+}
+
+.menu {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.title,
+footer {
+  padding: 40px 20px;
+}
+
+.menu-item {
+  justify-content: space-evenly;
+  width: 30%;
+  padding-bottom: 60px;
+}
+
+.menu-item img {
+  border-radius: 15px;
+}
+
+form,
+input,
+textarea,
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  padding: 5px;
+}
+
+button {
+  width: 20%;
+  float: left;
+}
+
+button:hover {
+  background-color: #232380;
+  color: white;
+  transition: all 0.1s linear 0.1s;
+}
+
+form {
+  padding: 20px 20px 20px 0;
+}
+
+.form,
+.reviews {
+  width: 50%;
+}
+
+.reviews h2 {
+  padding-bottom: 20px;
+}
+
+.review-item {
+  margin-bottom: 20px;
+  border-bottom: dashed 1px orange;
+  padding-bottom: 5px;
+}
+
+.reviews h4 {
+  margin-bottom: 10px;
+}
+
+.feedback {
+  text-align: center;
+  background-color: lightgreen;
+  margin: 50px;
+}
+
+/* Responsiveness */
+@media (max-width: 980px) {
+  .left {
+    margin: 0 auto;
+  }
+
+  .left p {
+    margin: 10px 0;
+  }
+
+  .review-item:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 980px) {
+  .banner img {
+    height: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome-text,
+  section,
+  .left,
+  .right,
+  .menu-item {
+    width: 100%;
+    letter-spacing: 0;
+  }
+
+  .form,
+  .reviews {
+    width: 90%;
+  }
+
+  form {
+    padding: 20px 0;
+  }
+
+  .reviews h2 {
+    margin-top: 50px;
+  }
+}
